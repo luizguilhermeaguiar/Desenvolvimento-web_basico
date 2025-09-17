@@ -5,99 +5,191 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início</title>
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="meu-cabecalho">
-
-        <div class="logo-container">
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="#">
+                    Cantina Digital
+                </a>
+                 <div class="logo-container">
             <img src="positivo.png" alt="Logo Universidade Positivo">
         </div>
+            </div>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Início</a></li>
+                    <li><a href="#">Cardápio</a></li>
+                    <li><a href="#">Meus Pedidos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </na
+            <div class="header-actions">
 
-        
-        <div class="navegacao-central">
-            <nav>
-                <a href="index.html">Início</a>
-                <a href="sobre.html">Cardápio</a>
-                <a href="contato.html">Meus Pedidos</a>
-                <a href="contato.html">Contato</a>
-            </nav>
+
+                <a href="#" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+                <a href="#" class="btn-login">Entrar</a>
+                <div class="mobile-toggle" id="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
         </div>
-
-
-        <div class="lado-direito"></div>
     </header>
-
     <main>
-
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="imagens/pizza.jpg" alt="Pizza de calabresa com tomate e manjericão">
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="imagens/hotdog.webp" alt="Cachorro-quente com mostarda e ketchup">
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="imagens/sanduiche.jpg" alt="Sanduíche apetitoso">
-                </div>
-
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Sua pausa para o lanche ficou mais fácil</h1>
+                <p>Peça online na Cantina Digital e retire seu pedido sem pegar filas. Rápido e prático!</p>
+                <a href="cardapio.html" class="btn btn-primary">Ver Cardapio</a>
             </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-
-        <section class="secao-categorias">
-
-            <h2 class="titulo-secao">Categorias</h2>
-        
-            <div class="categorias-grid">
-        
-                <div class="categoria-card">
-                    <img src="imagens/pizza2.jpg" alt="Pizza">
-                    <h3>Pizza</h3>
-                </div>
-        
-                <div class="categoria-card">
-                    <img src="imagens/hotdog2.jpg" alt="Hot Dog">
-                    <h3>Hot Dog</h3>
-                </div>
-        
-                <div class="categoria-card">
-                    <img src="Imagens/coxinha-Photoroom.png" alt="Salgados">
-                    <h3>Salgados</h3>
-                </div>
-        
-                <div class="categoria-card">
-                    <img src="imagens/sanduiche2.jpg" alt="Sanduíches">
-                    <h3>Sanduíches</h3>
-                </div>
-        
-                <div class="categoria-card">
-                    <img src="Imagens/coca-cola-2l.webp" alt="Bebidas">
-                    <h3>Bebidas</h3>
-                </div>
-        
-                <div class="categoria-card">
-                    <img src="Imagens/trento.webp" alt="Doces">
-                    <h3>Doces</h3>
-                </div>
-        
-            </div>
-        
         </section>
 
-    </main> <footer>
-        <p>aaa</p>
-        <p>&copy; 2025 Cantina Digital UP</p>
-    </footer>
-      
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <section class="popular">
+            <div class="container">
+                <h2>Mais Pedidos da Semana</h2>
+                
+                <div class="items-grid">
+                    
+                    <div class="item-card">
+                        <img src="Imagens/pizza3.jpg" alt="pizza">
+                        <div class="item-card-content">
+                            <h3>Pizzas</h3>
+                            <p>Calabresa, Frango com catupiry, Strogonoff, etc</p>
+                            <div class="item-card-footer">
+                                <span class="item-price">R$11,90</span>
+                                <button class="btn btn-primary add-to-cart" data-item="pizza">+ Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="item-card">
+                        <img src="Imagens/hotdog2.jpg" alt="cachorro-quente">
+                        <div class="item-card-content">
+                            <h3>HotDogs</h3>
+                            <p>Pão, Salsicha, Molho, Batata palha, etc</p>
+                            <div class="item-card-footer">
+                                <span class="item-price">R$ 9,90</span>
+                                <button class="btn btn-primary add-to-cart" data-item="hotdog">+ Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="item-card">
+                        <img src="Imagens/360_F_470700180_d8WrcpPXgf0mPCAlQRLs22tI7VmzyWoW.jpg" alt="salgados">
+                        <div class="item-card-content">
+                            <h3>Salgados</h3>
+                            <p>Coxinhas, Pasteis, frios, etc</p>
+                            <div class="item-card-footer">
+                                <span class="item-price">R$ 7,50</span>
+                                <button class="btn btn-primary add-to-cart" data-item="salgados">+ Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="item-card">
+                        <img src="Imagens/sanduiche2.jpg" alt="Sanduiche">
+                        <div class="item-card-content">
+                            <h3>Sanduiches</h3>
+                            <p>Frango</p>
+                            <div class="item-card-footer">
+                                <span class="item-price">R$ 12,50</span>
+                                <button class="btn btn-primary add-to-cart" data-item="Sanduiche">+ Adicionar</button>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div> </div>
+        </section>
+    
+
+    <section class="how-it-works">
+        <div class="container">
+            <h2>Simples, rápido e sem filas!</h2>
+
+            <div class="how-it-works-grid">
+
+            <div class="step-card">
+                <div class="step-icon"><i class="fass fa-mobile-alt"></i></div>
+                <h3>1. Escolha seu pedido</h3>
+                <p>Navegue pelo nosso cardápio completo diretamente pelo celular ou computador</p>
+            </div>
+
+            <div class="step-card">
+                <div class=step-icon"><i class="fas fa-credit-card"></i></div>
+                <h3>2. Pague online</h3>
+                <p>Faça o pagamento de forma segura com Pix, cartão de crédito ou débito</p>
+            </div>
+            <div class="step-card">
+                <div class="step-icon"><i class="fas fa-walking"></i></div>
+                <h3>3. Retire na cantina</h3>
+                <p>Aguarde a notificação de que seu pedido está pronto e retire no balcão, sem filas.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="offers">
+        <div class="container">
+            <h2>Oferta do Dia</h2>
+            <h3>Combo Lanche + Bebida por R$ 22,90!</h3>
+            <p>Aproveite nossa promoção especial de hoje: qualquer hambúrguer do cardápio + um refrigerante lata por um preço imperdível.</p>
+            <a href="#" class="btn btn-primary">Aproveitar Oferta</a>
+        </div>
+    </section>
+</main>
+
+
+<!--Rodapé--> 
+
+
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Cantina Digital</h4>
+                <p>Universidade Positivo<br>R. Prof. Pedro Viriato Parigot de Souza, 5300<br>Curitiba - PR, 81280-330</p>
+            </div>
+            <div class="footer-col">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Cardápio</a></li>
+                    <li><a href="#">Meus Pedidos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Siga-nos</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Pagamento Seguro</h4>
+                <p>Aceitamos as principais bandeiras e Pix.</p>
+                <div class="payment-icons" style="font-size: 1.8rem; margin-top: 10px; color: #fff;">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-pix"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cantina Digital. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+<div id="notification"></div>
+        
+
     <script src="script.js"></script>
     
 </body>
