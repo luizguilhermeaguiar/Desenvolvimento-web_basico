@@ -46,26 +46,71 @@
 
 
     
-    <div class="container area-busca">
-        <input type="text" id="caixaBusca" placeholder="Buscar por nome ou ingrediente">
-    </div>
+    <main>
+        <section class="menu-section">
+            <div class="container">
+                <h2>Nosso Cardápio</h2>
+                <div class="area-busca">
+                    <input type="text" id="caixaBusca" placeholder="Buscar por nome ou ingrediente...">
+                </div>
+        
+                <div id="category-filters" class="category-filters">
+                    <button class="filter-btn active" data-category="todos">Todos</button>
+                    <button class="filter-btn" data-category="pizza">Pizzas</button>
+                    <button class="filter-btn" data-category="hotdog">Hot Dogs</button>
+                    <button class="filter-btn" data-category="salgados">Salgados</button>
+                    <button class="filter-btn" data-category="sanduiches">Sanduíches</button>
+                    <button class="filter-btn" data-category="bebidas">Bebidas</button>
+                    <button class="filter-btn" data-category="doces">Doces</button>
+                </div>
+        
+                <div id="menu-items" class="items-grid">
+                    </div>
+            </div>
+        </section>
+    </main>
 
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Cantina Digital</h4>
+                    <p>Universidade Positivo<br>R. Prof. Pedro Viriato Parigot de Souza, 5300<br>Curitiba - PR, 81280-330</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="cardapio.html">Cardápio</a></li>
+                        <li><a href="meuspedidos.html">Meus Pedidos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Pagamento Seguro</h4>
+                    <p>Aceitamos as principais bandeiras e Pix.</p>
+                    <div class="payment-icons" style="font-size: 1.8rem; margin-top: 10px; color: #fff;">
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-pix"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cantina Digital. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="notification"></div>
 
-    <section>
-        <div class="items-cardapio"></div>  
-
-    </section>
- 
-
-
-
-    </div>
-
-
-
-
-      
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     
 </body>

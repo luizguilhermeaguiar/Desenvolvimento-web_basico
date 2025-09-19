@@ -326,14 +326,59 @@ h2 {
 
 /* ---------------------------------------------------- PAGINA CARDAPIO-------------------------------------------------- */
 
-.container area-busca{
-    width: 100px;
-    height: 10000px;
-    background-color: #063060;
+/* --- ESTILOS DA PÁGINA DE CARDÁPIO --- */
 
+.area-busca {
+    text-align: center;
+    margin: 20px 0 40px;
 }
 
+#caixaBusca {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+}
 
+.category-filters {
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border: 1px solid var(--primary-blue);
+    background-color: #fff;
+    color: var(--primary-blue);
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: var(--secondary-blue);
+    color: var(--text-light);
+    border-color: var(--secondary-blue);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-blue);
+    color: var(--text-light);
+    border-color: var(--primary-blue);
+}
+
+/* Ajuste no grid de itens para o cardápio */
+#menu-items.items-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center;
+}
 
 
 
